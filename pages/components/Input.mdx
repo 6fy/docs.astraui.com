@@ -1,0 +1,72 @@
+---
+name: Input
+description: An input component for capturing user input.
+---
+
+import { NextSeo } from "next-seo";
+
+<NextSeo
+  title="Input Component - Astra UI Kit"
+  description="An input component for capturing user input."
+/>
+
+import { Input } from "astra-ui-kit";
+
+<Input
+  defaultValue=""
+  onChange={() => {}}
+  placeholder="test"
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  disabled={true}
+  startIcon={null}
+  endIcon={null}
+  colorScheme="red"
+/>
+
+## Props
+
+| Name         | Description                                                  | Type      | Default |
+| ------------ | ------------------------------------------------------------ | --------- | ------- |
+| defaultValue | The default value of the input                               | string    | ""      |
+| onChange     | Event handler for input value changes                        | function  | -       |
+| placeholder  | The placeholder text to display in the input                 | string    | ""      |
+| \_hover      | Styles applied when the mouse hovers over the input          | CSSObject | -       |
+| \_active     | Styles applied when the input is being interacted with       | CSSObject | -       |
+| \_focus      | Styles applied when the input is focused                     | CSSObject | -       |
+| \_disabled   | Styles applied when the input is disabled                    | CSSObject | -       |
+| sx           | Custom CSS styles to be applied to the input                 | CSSObject | -       |
+| fullWidth    | Whether the input should be full width                       | boolean   | false   |
+| colorScheme  | The color scheme of the input                                | string    | null    |
+| disabled     | Whether the input is disabled                                | boolean   | false   |
+| startIcon    | The icon component to be displayed at the start of the input | ReactNode | null    |
+| endIcon      | The icon component to be displayed at the end of the input   | ReactNode | null    |
+
+## Description
+
+The Input component is used to capture user input. It provides various customization options, including placeholder text, event handling for value changes, and styling options. You can customize the appearance and behavior of the input using the provided props.
+
+## Usage
+
+```jsx
+import { Input } from "astra-ui-kit";
+
+<Input
+  defaultValue=""
+  onChange={() => {}}
+  placeholder=""
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  disabled={true}
+  startIcon={null}
+  endIcon={null}
+/>;
+```

@@ -1,0 +1,61 @@
+---
+name: Text
+description: A component for displaying text.
+---
+
+import { NextSeo } from "next-seo";
+
+<NextSeo
+  title="Text Component - Astra UI Kit"
+  description="A component for displaying text."
+/>
+
+import { Text } from "astra-ui-kit";
+
+<Text
+  color="red"
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  fontsize="">
+  Text
+</Text>
+
+## Props
+
+| Name       | Description                                        | Type      | Default |
+| ---------- | -------------------------------------------------- | --------- | ------- |
+| children   | The text content to be displayed                   | ReactNode | -       |
+| color      | The color of the text                              | string    | "red"   |
+| \_hover    | Styles applied when the mouse hovers over the text | CSSObject | -       |
+| \_active   | Styles applied when the text is active             | CSSObject | -       |
+| \_focus    | Styles applied when the text is focused            | CSSObject | -       |
+| \_disabled | Styles applied when the text is disabled           | CSSObject | -       |
+| sx         | Custom CSS styles to be applied to the text        | CSSObject | -       |
+| fullWidth  | Whether the text should take up the full width     | boolean   | false   |
+| fontsize   | The font size of the text                          | string    | ""      |
+
+## Description
+
+The Text component is used to display text on the screen. It provides options for customizing the color, size, and style of the text. You can customize the Text component using the provided props.
+
+## Usage
+
+```jsx
+import { Text } from "astra-ui-kit";
+
+<Text
+  color="red"
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  fontsize="">
+  Text
+</Text>;
+```

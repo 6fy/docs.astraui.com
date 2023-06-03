@@ -1,0 +1,82 @@
+---
+name: Stack
+description: A component for stacking elements vertically or horizontally.
+---
+
+import { NextSeo } from "next-seo";
+
+<NextSeo
+  title="Stack Component - Astra UI Kit"
+  description="A component for stacking elements vertically or horizontally."
+/>
+
+import { Stack, Button } from "astra-ui-kit";
+
+<Stack
+  sx={{
+    height: "10vh",
+    backgroundColor: "lightgray",
+    padding: "10px",
+  }}
+  children={
+    <>
+      <Button>Button 1</Button>
+      <Button>Button 2</Button>
+    </>
+  }
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  fullWidth={false}
+  direction="row"
+  spacingY=""
+  spacingX="5px"
+/>
+
+## Props
+
+| Name       | Description                                         | Type      | Default  |
+| ---------- | --------------------------------------------------- | --------- | -------- |
+| sx         | Custom styles for the Stack component               | CSSObject | -        |
+| children   | The children elements to be stacked                 | ReactNode | -        |
+| \_hover    | Styles applied when the mouse hovers over the Stack | CSSObject | -        |
+| \_active   | Styles applied when the Stack is active             | CSSObject | -        |
+| \_focus    | Styles applied when the Stack is focused            | CSSObject | -        |
+| \_disabled | Styles applied when the Stack is disabled           | CSSObject | -        |
+| fullWidth  | Whether the Stack should take up the full width     | boolean   | false    |
+| direction  | The direction in which the elements are stacked     | string    | "column" |
+| spacingY   | The vertical spacing between the stacked elements   | string    | ""       |
+| spacingX   | The horizontal spacing between the stacked elements | string    | ""       |
+
+## Description
+
+The Stack component is used to stack elements vertically or horizontally. It provides flexibility in terms of customization and layout. You can customize the Stack component by using the provided props.
+
+## Usage
+
+```jsx
+import { Stack } from "astra-ui-kit";
+
+<Stack
+  sx={{
+    height: "10vh",
+    backgroundColor: "lightgray",
+    padding: "10px",
+  }}
+  children={
+    <>
+      <Button>btn 1</Button>
+      <Button>btn 2</Button>
+    </>
+  }
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  fullWidth={false}
+  direction="row"
+  spacingY=""
+  spacingX="5px"
+/>;
+```

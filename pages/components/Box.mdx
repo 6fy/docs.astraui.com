@@ -1,0 +1,60 @@
+---
+name: Box
+description: Flexible and customizable box component.
+---
+
+import { NextSeo } from "next-seo";
+
+<NextSeo
+  title="Box Component - Astra UI Kit"
+  description="A versatile box component for layout and styling."
+/>
+
+import { Box } from "astra-ui-kit";
+
+<Box
+  sx={{
+    height: "10vh",
+    width: "10vw",
+    backgroundColor: "blue",
+  }}
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  fullWidth={false}
+/>
+
+## Props
+
+| Name       | Description                                             | Type      | Default |
+| ---------- | ------------------------------------------------------- | --------- | ------- |
+| sx         | Custom CSS styles to be applied to the component        | CSSObject | -       |
+| \_hover    | Styles applied when the mouse hovers over the component | CSSObject | -       |
+| \_active   | Styles applied when the component is clicked            | CSSObject | -       |
+| \_focus    | Styles applied when the component is focused            | CSSObject | -       |
+| \_disabled | Styles applied when the component is disabled           | CSSObject | -       |
+| fullWidth  | Whether the component should be full width              | boolean   | -       |
+
+## Description
+
+The Box component allows you to create a flexible box and apply various CSS styles. You can customize the appearance of the component using the `sx` prop. Additionally, you can use the `_hover`, `_active`, `_focus`, and `_disabled` props to specify custom styles to be applied when the mouse hovers over, clicks, focuses, or disables the component, respectively.
+
+## Usage
+
+```jsx
+import { Box } from "AstraUI";
+
+<Box
+  sx={{
+    height: "10vh",
+    width: "10vw",
+    backgroundColor: "blue",
+  }}
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  fullWidth={false}
+/>;
+```

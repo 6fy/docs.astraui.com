@@ -1,0 +1,73 @@
+---
+name: Button
+description: A versatile button component for user interactions.
+---
+
+import { NextSeo } from "next-seo";
+
+<NextSeo
+  title="Button Component - Astra UI Kit"
+  description="A customizable button component for user interactions."
+/>
+
+import { Button } from "astra-ui-kit";
+
+<Button
+  children="Button"
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  colorScheme="purple"
+  variant="ghost"
+  disabled={false}
+  size="medium"
+  startIcon={null}
+  endIcon={null}
+/>
+
+## Props
+
+| Name        | Description                                                   | Type      | Default   |
+| ----------- | ------------------------------------------------------------- | --------- | --------- |
+| children    | The content of the button                                     | ReactNode | -         |
+| \_hover     | Styles applied when the mouse hovers over the button          | CSSObject | -         |
+| \_active    | Styles applied when the button is clicked                     | CSSObject | -         |
+| \_focus     | Styles applied when the button is focused                     | CSSObject | -         |
+| \_disabled  | Styles applied when the button is disabled                    | CSSObject | -         |
+| sx          | Custom CSS styles to be applied to the button                 | CSSObject | -         |
+| fullWidth   | Whether the button should be full width                       | boolean   | false     |
+| colorScheme | The color scheme of the button                                | string    | "purple"  |
+| variant     | The variant of the button                                     | string    | "primary" |
+| disabled    | Whether the button is disabled                                | boolean   | false     |
+| size        | The size of the button                                        | string    | "medium"  |
+| startIcon   | The icon component to be displayed at the start of the button | ReactNode | null      |
+| endIcon     | The icon component to be displayed at the end of the button   | ReactNode | null      |
+
+## Description
+
+The Button component is a versatile button that can be used for various user interactions. It supports custom styles, different color schemes, and variants. You can customize the appearance and behavior of the button using the provided props.
+
+## Usage
+
+```jsx
+import { Button } from "astra-ui-kit";
+
+<Button
+  children="Button"
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  colorScheme="purple"
+  variant="ghost"
+  disabled={false}
+  size="medium"
+  startIcon={null}
+  endIcon={null}
+/>;
+```

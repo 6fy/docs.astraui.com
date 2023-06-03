@@ -1,0 +1,58 @@
+---
+name: Checkbox
+description: A checkbox component used for selecting options.
+---
+
+import { NextSeo } from "next-seo";
+
+<NextSeo
+  title="Checkbox Component - Astra UI Kit"
+  description="A checkbox component used for selecting options."
+/>
+
+import { Checkbox } from "astra-ui-kit";
+
+<Checkbox
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  disabled={false}
+  colorScheme="purple"
+/>
+
+## Props
+
+| Name        | Description                                            | Type      | Default  |
+| ----------- | ------------------------------------------------------ | --------- | -------- |
+| \_hover     | Styles applied when the mouse hovers over the checkbox | CSSObject | -        |
+| \_active    | Styles applied when the checkbox is clicked            | CSSObject | -        |
+| \_focus     | Styles applied when the checkbox is focused            | CSSObject | -        |
+| \_disabled  | Styles applied when the checkbox is disabled           | CSSObject | -        |
+| sx          | Custom CSS styles to be applied to the checkbox        | CSSObject | -        |
+| fullWidth   | Whether the checkbox should be full width              | boolean   | false    |
+| disabled    | Whether the checkbox is disabled                       | boolean   | false    |
+| colorScheme | The color scheme of the checkbox                       | string    | "purple" |
+
+## Description
+
+The Checkbox component is used to select options from a list. It provides the functionality to toggle the state of the checkbox. You can customize the appearance and behavior of the checkbox using the provided props.
+
+## Usage
+
+```jsx
+import { Checkbox } from "astra-ui-kit";
+
+<Checkbox
+  _hover={{}}
+  _active={{}}
+  _focus={{}}
+  _disabled={{}}
+  sx={{}}
+  fullWidth={false}
+  disabled={false}
+  colorScheme="purple"
+/>;
+```
