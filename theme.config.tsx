@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://discord.com",
   },
-  docsRepositoryBase: "https://github.com/AstraUI/AstraUI.com",
+  docsRepositoryBase: "https://github.com/AstraUI/docs.astraui.com",
   footer: {
     text: "AstraUI",
   },

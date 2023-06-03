@@ -9,7 +9,7 @@
   },
   "author": "Mert Sabinov",
   "license": "MIT",
-  "homepage": "https://github.com/AstraUI/AstraUI.com",
+  "homepage": "https://github.com/AstraUI/docs.astraui.com",
   "dependencies": {
     "@types/styled-components": "^5.1.26",
     "astra-ui-kit": "^0.0.7",
