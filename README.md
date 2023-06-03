@@ -28,4 +28,4 @@ The Astra UI Kit is licensed under the MIT License. See the [LICENSE](./LICENSE)
 
 ## Credits
 
-The Astra UI Kit is developed and maintained by [Mert Sabinov](https://www.mertsabinov.com).
+The Astra UI Kit is developed and maintained by [Mert Sabinov](www.mertsabinov.com).
