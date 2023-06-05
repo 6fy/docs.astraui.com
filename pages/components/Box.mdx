@@ -1,60 +1,63 @@
 ---
-name: Box
-description: Flexible and customizable box component.
+title: Box
+description: The Box component serves as a flexible container for nesting and layout.
 ---
 
 import { NextSeo } from "next-seo";
 
+# Box
+
 <NextSeo
   title="Box Component - Astra UI Kit"
-  description="A versatile box component for layout and styling."
+  description="The Box component serves as a flexible container for nesting and layout."
 />
+
+The `Box` component is a foundational component in the Astra UI Kit. It is a flexible and extensible container for nesting, alignment, and layout. It is equipped with space and color utility functions from Styled System, allowing for extensive customization.
+
+## Usage
 
 import { Box } from "astra-ui-kit";
 
 <Box
   sx={{
-    height: "10vh",
-    width: "10vw",
-    backgroundColor: "blue",
+    height: "100px",
+    width: "100px",
   }}
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  fullWidth={false}
-/>
+  bg="primary"
+  color="white"
+  display="flex"
+  alignItems="center"
+  backgroundColor="red"
+  justifyContent="center"></Box>
 
-## Props
+## Properties
 
-| Name       | Description                                             | Type      | Default |
-| ---------- | ------------------------------------------------------- | --------- | ------- |
-| sx         | Custom CSS styles to be applied to the component        | CSSObject | -       |
-| \_hover    | Styles applied when the mouse hovers over the component | CSSObject | -       |
-| \_active   | Styles applied when the component is clicked            | CSSObject | -       |
-| \_focus    | Styles applied when the component is focused            | CSSObject | -       |
-| \_disabled | Styles applied when the component is disabled           | CSSObject | -       |
-| fullWidth  | Whether the component should be full width              | boolean   | -       |
+### `children` : ReactNode
 
-## Description
+Defines the elements or components to be enclosed within the `Box`.
 
-The Box component allows you to create a flexible box and apply various CSS styles. You can customize the appearance of the component using the `sx` prop. Additionally, you can use the `_hover`, `_active`, `_focus`, and `_disabled` props to specify custom styles to be applied when the mouse hovers over, clicks, focuses, or disables the component, respectively.
+### `color` : string
 
-## Usage
+Sets the color of the `Box`. Accepts any valid CSS color value.
 
-```jsx
-import { Box } from "AstraUI";
+### `...rest` : object
 
-<Box
-  sx={{
-    height: "10vh",
-    width: "10vw",
-    backgroundColor: "blue",
-  }}
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  fullWidth={false}
-/>;
-```
+The `Box` component supports all properties of an HTMLDivElement, and all ColorProps and SpaceProps from Styled System. This ensures that the `Box` can adapt its style and behavior to your specific needs.
+
+## Styled System Props
+
+The `Box` component includes support for `space` and `color` utilities from Styled System. This means you can apply space (margin and padding) and color values directly to your components.
+
+## Pseudo-class States
+
+The `Box` component also offers support for CSS pseudo-classes, such as `_hover`, `_focus`, `_active`, and `_disabled`. With these pseudo-classes, you can define how the `Box` should look and behave under certain states or user interactions.
+
+## Accessibility
+
+Accessibility is a key consideration in the design of the `Box` component. To ensure your application is accessible, always provide meaningful `alt` texts for images and adequate color contrast ratios as per WCAG guidelines.
+
+## Performance
+
+The `Box` component is optimized for performance. By leveraging React's virtual DOM, it ensures efficient updates and rendering, making it suitable for large-scale applications.
+
+We hope this documentation gives you a clear understanding of the `Box` component and its capabilities. If you have further queries or need more detailed customization options, feel free to reach out to our team.

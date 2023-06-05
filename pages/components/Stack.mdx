@@ -1,82 +1,56 @@
 ---
-name: Stack
-description: A component for stacking elements vertically or horizontally.
+title: Stack
+description: The Stack component in the Astra UI Kit provides a customizable container that allows for spacing between child elements.
 ---
 
 import { NextSeo } from "next-seo";
 
+# Stack
+
 <NextSeo
   title="Stack Component - Astra UI Kit"
-  description="A component for stacking elements vertically or horizontally."
+  description="The Stack component in the Astra UI Kit provides a customizable container that allows for spacing between child elements."
 />
 
-import { Stack, Button } from "astra-ui-kit";
-
-<Stack
-  sx={{
-    height: "10vh",
-    backgroundColor: "lightgray",
-    padding: "10px",
-  }}
-  children={
-    <>
-      <Button>Button 1</Button>
-      <Button>Button 2</Button>
-    </>
-  }
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  fullWidth={false}
-  direction="row"
-  spacingY=""
-  spacingX="5px"
-/>
-
-## Props
-
-| Name       | Description                                         | Type      | Default  |
-| ---------- | --------------------------------------------------- | --------- | -------- |
-| sx         | Custom styles for the Stack component               | CSSObject | -        |
-| children   | The children elements to be stacked                 | ReactNode | -        |
-| \_hover    | Styles applied when the mouse hovers over the Stack | CSSObject | -        |
-| \_active   | Styles applied when the Stack is active             | CSSObject | -        |
-| \_focus    | Styles applied when the Stack is focused            | CSSObject | -        |
-| \_disabled | Styles applied when the Stack is disabled           | CSSObject | -        |
-| fullWidth  | Whether the Stack should take up the full width     | boolean   | false    |
-| direction  | The direction in which the elements are stacked     | string    | "column" |
-| spacingY   | The vertical spacing between the stacked elements   | string    | ""       |
-| spacingX   | The horizontal spacing between the stacked elements | string    | ""       |
-
-## Description
-
-The Stack component is used to stack elements vertically or horizontally. It provides flexibility in terms of customization and layout. You can customize the Stack component by using the provided props.
+The `Stack` component in the Astra UI Kit is a robust, customizable container that allows for spacing between child elements. It's a versatile component, suited to creating designs that require a predictable separation of child elements in both horizontal and vertical directions.
 
 ## Usage
 
-```jsx
-import { Stack } from "astra-ui-kit";
+import { Stack, Button } from "astra-ui-kit";
 
-<Stack
-  sx={{
-    height: "10vh",
-    backgroundColor: "lightgray",
-    padding: "10px",
-  }}
-  children={
-    <>
-      <Button>btn 1</Button>
-      <Button>btn 2</Button>
-    </>
-  }
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  fullWidth={false}
-  direction="row"
-  spacingY=""
-  spacingX="5px"
-/>;
-```
+<Stack spacingX="10px" backgroundColor="grey" p="10px">
+  <Button>Button 1</Button>
+  <Button>Button 2</Button>
+</Stack>
+
+## Properties
+
+### `spacingY` : string
+
+Sets the vertical spacing between child elements.
+
+### `spacingX` : string
+
+Sets the horizontal spacing between child elements.
+
+### `...rest` : object
+
+The `Stack` component supports all properties related to color, space, size, grid, layout, and flexbox from the styled-system library, ensuring full flexibility for various design needs.
+
+## Styled System Props
+
+The `Stack` component can use styled-system functions for color, space, size, grid, layout, and flexbox. Styled-system props allow you to adjust the component to fit various design requirements.
+
+## Pseudo-class States
+
+The `Stack` component has support for the `_hover`, `_focus`, `_active`, and `_disabled` pseudo-classes. This allows you to define how the `Stack` should look and behave under certain states or user interactions.
+
+## Accessibility
+
+The `Stack` component is compliant with WCAG guidelines, ensuring that your application remains accessible to all users.
+
+## Performance
+
+The `Stack` component, like all components in the Astra UI Kit, is optimized for performance. It minimizes re-renders and leverages the virtual DOM for efficient updates.
+
+Should you need further customization options or have any queries, feel free to contact our team.

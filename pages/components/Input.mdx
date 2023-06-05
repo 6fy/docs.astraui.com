@@ -1,72 +1,56 @@
 ---
-name: Input
-description: An input component for capturing user input.
+title: Input
+description: The Input component in the Astra UI Kit provides a customizable HTML input with optional start and end icons.
 ---
 
+import { Input } from "astra-ui-kit";
 import { NextSeo } from "next-seo";
+
+# Input
 
 <NextSeo
   title="Input Component - Astra UI Kit"
-  description="An input component for capturing user input."
+  description="The Input component in the Astra UI Kit provides a customizable HTML input with optional start and end icons."
 />
 
-import { Input } from "astra-ui-kit";
-
-<Input
-  defaultValue=""
-  onChange={() => {}}
-  placeholder="test"
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  disabled={true}
-  startIcon={null}
-  endIcon={null}
-  colorScheme="red"
-/>
-
-## Props
-
-| Name         | Description                                                  | Type      | Default |
-| ------------ | ------------------------------------------------------------ | --------- | ------- |
-| defaultValue | The default value of the input                               | string    | ""      |
-| onChange     | Event handler for input value changes                        | function  | -       |
-| placeholder  | The placeholder text to display in the input                 | string    | ""      |
-| \_hover      | Styles applied when the mouse hovers over the input          | CSSObject | -       |
-| \_active     | Styles applied when the input is being interacted with       | CSSObject | -       |
-| \_focus      | Styles applied when the input is focused                     | CSSObject | -       |
-| \_disabled   | Styles applied when the input is disabled                    | CSSObject | -       |
-| sx           | Custom CSS styles to be applied to the input                 | CSSObject | -       |
-| fullWidth    | Whether the input should be full width                       | boolean   | false   |
-| colorScheme  | The color scheme of the input                                | string    | null    |
-| disabled     | Whether the input is disabled                                | boolean   | false   |
-| startIcon    | The icon component to be displayed at the start of the input | ReactNode | null    |
-| endIcon      | The icon component to be displayed at the end of the input   | ReactNode | null    |
-
-## Description
-
-The Input component is used to capture user input. It provides various customization options, including placeholder text, event handling for value changes, and styling options. You can customize the appearance and behavior of the input using the provided props.
+The `Input` component in the Astra UI Kit is a highly flexible and customizable HTML input component that allows for optional start and end icons, various color options, and enhanced hover, focus, and active states.
 
 ## Usage
 
-```jsx
-import { Input } from "astra-ui-kit";
+<Input placeholder="Input" />
 
-<Input
-  defaultValue=""
-  onChange={() => {}}
-  placeholder=""
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  disabled={true}
-  startIcon={null}
-  endIcon={null}
-/>;
-```
+## Properties
+
+### `startIcon` : ReactNode
+
+Sets an optional start icon for the input.
+
+### `endIcon` : ReactNode
+
+Sets an optional end icon for the input.
+
+### `backgroundColor` : string
+
+Sets the background color for the input.
+
+### `...rest` : object
+
+The `Input` component supports all properties of an HTMLInputElement, ensuring full flexibility for various needs.
+
+## Styling
+
+The `Input` uses a styled div container for managing the layout and appearance of the input and its associated icons.
+
+## Pseudo-class States
+
+The `Input` component has support for the `_hover`, `_focus`, `_active`, and `_disabled` pseudo-classes. This allows you to define how the `Input` should look and behave under certain states or user interactions.
+
+## Accessibility
+
+The `Input` component is compliant with WCAG guidelines, ensuring that your application remains accessible to all users. However, make sure to provide proper labeling to the input to help screen reader users.
+
+## Performance
+
+The `Input` component, like all components in the Astra UI Kit, is optimized for performance. It minimizes re-renders and leverages the virtual DOM for efficient updates.
+
+Should you need further customization options or have any queries, feel free to contact our team.

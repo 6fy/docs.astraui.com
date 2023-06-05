@@ -1,73 +1,61 @@
 ---
-name: Button
-description: A versatile button component for user interactions.
+title: Button
+description: The Button component in the Astra UI Kit is a versatile and customizable button for various user interactions.
 ---
 
 import { NextSeo } from "next-seo";
 
+# Button
+
 <NextSeo
   title="Button Component - Astra UI Kit"
-  description="A customizable button component for user interactions."
+  description="The Button component in the Astra UI Kit is a versatile and customizable button for various user interactions."
 />
 
-import { Button } from "astra-ui-kit";
-
-<Button
-  children="Button"
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  colorScheme="purple"
-  variant="ghost"
-  disabled={false}
-  size="medium"
-  startIcon={null}
-  endIcon={null}
-/>
-
-## Props
-
-| Name        | Description                                                   | Type      | Default   |
-| ----------- | ------------------------------------------------------------- | --------- | --------- |
-| children    | The content of the button                                     | ReactNode | -         |
-| \_hover     | Styles applied when the mouse hovers over the button          | CSSObject | -         |
-| \_active    | Styles applied when the button is clicked                     | CSSObject | -         |
-| \_focus     | Styles applied when the button is focused                     | CSSObject | -         |
-| \_disabled  | Styles applied when the button is disabled                    | CSSObject | -         |
-| sx          | Custom CSS styles to be applied to the button                 | CSSObject | -         |
-| fullWidth   | Whether the button should be full width                       | boolean   | false     |
-| colorScheme | The color scheme of the button                                | string    | "purple"  |
-| variant     | The variant of the button                                     | string    | "primary" |
-| disabled    | Whether the button is disabled                                | boolean   | false     |
-| size        | The size of the button                                        | string    | "medium"  |
-| startIcon   | The icon component to be displayed at the start of the button | ReactNode | null      |
-| endIcon     | The icon component to be displayed at the end of the button   | ReactNode | null      |
-
-## Description
-
-The Button component is a versatile button that can be used for various user interactions. It supports custom styles, different color schemes, and variants. You can customize the appearance and behavior of the button using the provided props.
+The `Button` component serves as a user's interaction point. It offers two variants, the standard `Button` and the `GhostButton`, with customizable icons, typography, and sizes, thanks to Styled System utilities.
 
 ## Usage
 
-```jsx
 import { Button } from "astra-ui-kit";
 
-<Button
-  children="Button"
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  colorScheme="purple"
-  variant="ghost"
-  disabled={false}
-  size="medium"
-  startIcon={null}
-  endIcon={null}
-/>;
-```
+<Button>Click Me</Button>
+
+## Properties
+
+### `children` : ReactNode
+
+Defines the text or elements to be displayed on the `Button`.
+
+### `variant` : "primary" | "ghost"
+
+Determines the visual style of the `Button`. "primary" applies a solid background color, while "ghost" results in a transparent background with a border.
+
+### `startIcon` : ReactNode
+
+A ReactNode to be displayed at the start of the `Button`.
+
+### `endIcon` : ReactNode
+
+A ReactNode to be displayed at the end of the `Button`.
+
+### `...rest` : object
+
+The `Button` component supports all properties of an HTMLButtonElement, and all ColorProps, TypographyProps, and SizeProps from Styled System. This ensures that the `Button` can adapt its style and behavior to your specific needs.
+
+## Styled System Props
+
+The `Button` component supports `color`, `size`, and `typography` utilities from Styled System. This allows for customization of the button's visual attributes directly.
+
+## Pseudo-class States
+
+The `Button` component also offers support for CSS pseudo-classes, such as `_hover`, `_focus`, `_active`, and `_disabled`. With these pseudo-classes, you can define how the `Button` should look and behave under certain states or user interactions.
+
+## Accessibility
+
+As a key point of user interaction, the `Button` component has been designed with accessibility in mind. Ensure that you are using meaningful labels and appropriate color contrast ratios as per WCAG guidelines.
+
+## Performance
+
+The `Button` component has been optimized for performance. By leveraging React's virtual DOM, it ensures efficient updates and rendering, making it suitable for large-scale applications.
+
+If you have further queries or need more detailed customization options, feel free to reach out to our team.

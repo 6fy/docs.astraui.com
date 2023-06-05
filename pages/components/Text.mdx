@@ -1,61 +1,40 @@
 ---
-name: Text
-description: A component for displaying text.
+title: Text Component
+description: The Text component in the Astra UI Kit provides a customizable text container that supports typography and color styling.
 ---
 
+import { Text } from "astra-ui-kit";
 import { NextSeo } from "next-seo";
+
+# Text
 
 <NextSeo
   title="Text Component - Astra UI Kit"
-  description="A component for displaying text."
+  description="The Text component in the Astra UI Kit provides a customizable text container that supports typography and color styling."
 />
 
-import { Text } from "astra-ui-kit";
+The `Text` component in the Astra UI Kit is a robust, customizable text container that supports typography and color styling from the styled-system library.
 
-<Text
-  color="red"
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  fontsize="">
-  Text
-</Text>
+## Properties
 
-## Props
+### `color` : string
 
-| Name       | Description                                        | Type      | Default |
-| ---------- | -------------------------------------------------- | --------- | ------- |
-| children   | The text content to be displayed                   | ReactNode | -       |
-| color      | The color of the text                              | string    | "red"   |
-| \_hover    | Styles applied when the mouse hovers over the text | CSSObject | -       |
-| \_active   | Styles applied when the text is active             | CSSObject | -       |
-| \_focus    | Styles applied when the text is focused            | CSSObject | -       |
-| \_disabled | Styles applied when the text is disabled           | CSSObject | -       |
-| sx         | Custom CSS styles to be applied to the text        | CSSObject | -       |
-| fullWidth  | Whether the text should take up the full width     | boolean   | false   |
-| fontsize   | The font size of the text                          | string    | ""      |
+Determines the color of the text.
 
-## Description
+### `...rest` : object
 
-The Text component is used to display text on the screen. It provides options for customizing the color, size, and style of the text. You can customize the Text component using the provided props.
+The `Text` component supports all properties related to color and typography from the styled-system library, ensuring full flexibility for various design needs.
 
-## Usage
+## Styled System Props
 
-```jsx
-import { Text } from "astra-ui-kit";
+The `Text` component can use styled-system functions for color and typography. Styled-system props allow you to adjust the component to fit various design requirements.
 
-<Text
-  color="red"
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  fontsize="">
-  Text
-</Text>;
-```
+Here are a few examples:
+
+### `ColorProps`
+
+Manage the color-related styles, like background-color and color.
+
+### `TypographyProps`
+
+Manage the typography-related styles, including font-family, font-size, font-style, letter-spacing, line-height, text-align, and text-color.

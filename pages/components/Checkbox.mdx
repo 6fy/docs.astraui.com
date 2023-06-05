@@ -1,58 +1,53 @@
 ---
-name: Checkbox
-description: A checkbox component used for selecting options.
+title: Checkbox
+description: The Checkbox component in the Astra UI Kit provides a customizable HTML input checkbox with a variety of color schemes.
 ---
 
 import { NextSeo } from "next-seo";
 
+# Checkbox
+
 <NextSeo
   title="Checkbox Component - Astra UI Kit"
-  description="A checkbox component used for selecting options."
+  description="The Checkbox component in the Astra UI Kit provides a customizable HTML input checkbox with a variety of color schemes."
 />
 
-import { Checkbox } from "astra-ui-kit";
-
-<Checkbox
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  disabled={false}
-  colorScheme="purple"
-/>
-
-## Props
-
-| Name        | Description                                            | Type      | Default  |
-| ----------- | ------------------------------------------------------ | --------- | -------- |
-| \_hover     | Styles applied when the mouse hovers over the checkbox | CSSObject | -        |
-| \_active    | Styles applied when the checkbox is clicked            | CSSObject | -        |
-| \_focus     | Styles applied when the checkbox is focused            | CSSObject | -        |
-| \_disabled  | Styles applied when the checkbox is disabled           | CSSObject | -        |
-| sx          | Custom CSS styles to be applied to the checkbox        | CSSObject | -        |
-| fullWidth   | Whether the checkbox should be full width              | boolean   | false    |
-| disabled    | Whether the checkbox is disabled                       | boolean   | false    |
-| colorScheme | The color scheme of the checkbox                       | string    | "purple" |
-
-## Description
-
-The Checkbox component is used to select options from a list. It provides the functionality to toggle the state of the checkbox. You can customize the appearance and behavior of the checkbox using the provided props.
+The `Checkbox` component in the Astra UI Kit is a wrapper around the HTML input checkbox, but with an enhanced appearance and additional customization options.
 
 ## Usage
 
-```jsx
 import { Checkbox } from "astra-ui-kit";
 
-<Checkbox
-  _hover={{}}
-  _active={{}}
-  _focus={{}}
-  _disabled={{}}
-  sx={{}}
-  fullWidth={false}
-  disabled={false}
-  colorScheme="purple"
-/>;
-```
+<Checkbox />
+
+## Properties
+
+### `disabled` : boolean
+
+Determines whether the `Checkbox` is disabled.
+
+### `colorScheme` : "purple" | "green" | "red" | "orange" | "yellow" | DefaultColorKey
+
+Sets the color scheme for the `Checkbox` when checked.
+
+### `...rest` : object
+
+The `Checkbox` component supports all properties of an HTMLInputElement, ensuring full flexibility for various needs.
+
+## Styling
+
+The `Checkbox` uses a color scheme handler to set the `accent-color` property when the checkbox is checked, allowing for a variety of visual options.
+
+## Pseudo-class States
+
+The `Checkbox` component has support for the `_hover`, `_focus`, `_active`, and `_disabled` pseudo-classes. This allows you to define how the `Checkbox` should look and behave under certain states or user interactions.
+
+## Accessibility
+
+The `Checkbox` component is compliant with WCAG guidelines, ensuring that your application remains accessible to all users. However, make sure to provide proper labeling to the checkbox to help screen reader users.
+
+## Performance
+
+The `Checkbox` component, like all components in the Astra UI Kit, is optimized for performance. It minimizes re-renders and leverages the virtual DOM for efficient updates.
+
+Should you need further customization options or have any queries, feel free to contact our team.
