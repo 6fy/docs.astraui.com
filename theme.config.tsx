@@ -4,12 +4,12 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
   logo: <span>AstraUI</span>,
   project: {
-    link: "https://github.com/AstraUI/AstraUI",
+    link: "https://github.com/mertsabinov/AstraUI",
   },
   chat: {
     link: "https://discord.com",
   },
-  docsRepositoryBase: "https://github.com/AstraUI/docs.astraui.com",
+  docsRepositoryBase: "https://github.com/mertsabinov/docs.astraui.com",
   footer: {
     text: "AstraUI",
   },
