@@ -2,7 +2,7 @@ import { Menu, MenuItem, Button, Box } from "astra-ui-kit";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-export const ToggleMenu = () => {
+const ToggleMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -26,3 +26,5 @@ export const ToggleMenu = () => {
     </>
   );
 };
+
+export default ToggleMenu;
