@@ -1,0 +1,92 @@
+---
+title: Menu and MenuItem
+description: The Menu and MenuItem components in the Astra UI Kit provide a flexible navigation system for web applications.
+---
+
+import { NextSeo } from "next-seo";
+import { ToggleMenu } from "./ToggleMenu";
+
+# Menu and MenuItem
+
+<NextSeo
+  title="Menu and MenuItem Components - Astra UI Kit"
+  description="The Menu and MenuItem components in the Astra UI Kit provide a flexible navigation system for web applications."
+/>
+
+The `Menu` and `MenuItem` components in the Astra UI Kit form a robust, flexible navigation system for web applications. They allow for the display of navigation items in a neat, organized, and easily customizable manner.
+
+## Usage
+
+import { Menu, MenuItem, Button } from "astra-ui-kit";
+import { useState } from "react";
+
+<Menu sx={{ color: "black" }}>
+  <MenuItem>Menu Item 1</MenuItem>
+  <MenuItem>Menu Item 2</MenuItem>
+  <MenuItem>Menu Item 3</MenuItem>
+</Menu>
+
+### usage menu with Button
+
+    <ToggleMenu/>
+
+```jsx
+import { Menu, MenuItem, Button, Box } from "astra-ui-kit";
+import { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+
+export const ToggleMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <>
+      <Button
+        onClick={handleToggle}
+        endIcon={isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}>
+        Toggle Menu
+      </Button>
+      {isOpen && (
+        <Menu>
+          <MenuItem onClick={() => setIsOpen(false)}>Menu Item 1</MenuItem>
+          <MenuItem onClick={() => setIsOpen(false)}>Menu Item 2</MenuItem>
+          <MenuItem onClick={() => setIsOpen(false)}>Menu Item 3</MenuItem>
+        </Menu>
+      )}
+    </>
+  );
+};
+```
+
+## Properties
+
+Both `Menu` and `MenuItem` components share a number of properties, related to space, color, width, typography, and generic HTML attributes.
+
+### `Menu` Component Properties
+
+#### `...rest` : object
+
+The `Menu` component supports all properties related to space, color, and width from the styled-system library, as well as generic HTML attributes for UL elements, ensuring full flexibility for various design needs.
+
+### `MenuItem` Component Properties
+
+#### `...rest` : object
+
+The `MenuItem` component supports all properties related to space, color, typography from the styled-system library, as well as generic HTML attributes for LI elements, ensuring full flexibility for various design needs.
+
+## Styled System Props
+
+The `Menu` and `MenuItem` components can use styled-system functions for color, space, width, and typography. Styled-system props allow you to adjust the components to fit various design requirements.
+
+## Accessibility
+
+The `Menu` and `MenuItem` components are compliant with WCAG guidelines, ensuring that your application remains accessible to all users.
+
+## Performance
+
+The `Menu` and `MenuItem` components, like all components in the Astra UI Kit, are optimized for performance. They minimize re-renders and leverage the virtual DOM for efficient updates.
+
+Should you need further customization options or have any queries, feel free to contact our team.
